@@ -1,27 +1,42 @@
-import br.com.alura.bytebank.modelo.Endereco
-import java.lang.IllegalStateException
-
 fun main() {
-    println("início main")
 
-    var enderecoNulo: Endereco? = Endereco(logradouro = "rua vergueiro", complemento = "predio")
-    val logradouroNovo: String? = enderecoNulo?.logradouro
-    enderecoNulo?.let {
-        println(it.logradouro.length)
-        val tamanhoComplemento: Int = it.complemento?.length ?: throw IllegalStateException("Complemento não pode ser vazio")
-        println(tamanhoComplemento)
+    /*testaTipoFuncaoReferencia()
+    testaTipoFuncaoClasse()*/
+
+    val minhaFuncaoLambda = { a: Int, b: Int -> // Usa-se o _ para os parametros não utilizados no lambda
+        a + b
     }
+    println(minhaFuncaoLambda(15, 10))
 
-    teste("")
-    teste(1)
 
-    println("fim main")
+    val minhaFuncaoAnonima = fun(a: Int, b: Int): Int{
+        return a + b
     }
-
-fun teste(valor: Any){
-    val numero: Int? = valor as? Int
-    println(numero)
+    println(minhaFuncaoAnonima(20, 10))
 }
+
+
+fun testaTipoFuncaoClasse() {
+    val minhaFuncaoClasse: (Int, Int) -> Int = Soma()
+    println(minhaFuncaoClasse(10, 10))
+}
+
+fun testaTipoFuncaoReferencia() {
+    val minhaFuncao: (Int, Int) -> Int = ::soma
+    println(minhaFuncao(5, 10))
+}
+
+fun soma(a: Int, b: Int): Int{
+    return a + b
+}
+
+class Soma : (Int, Int) -> Int {
+    override fun invoke(a: Int, b: Int): Int = a + b
+
+}
+
+
+
 
 
 

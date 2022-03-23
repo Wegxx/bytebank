@@ -1,39 +1,29 @@
+import br.com.alura.bytebank.modelo.Endereco
+
 fun main() {
+    val testeFuncao: () -> Unit
+   Endereco().let {
+       it
+   }
+    "".let(:: testeRecebeString)
 
-    /*testaTipoFuncaoReferencia()
-    testaTipoFuncaoClasse()*/
-
-    val minhaFuncaoLambda = { a: Int, b: Int -> // Usa-se o _ para os parametros não utilizados no lambda
-        a + b
+    1.let {
+        it
     }
-    println(minhaFuncaoLambda(15, 10))
 
+    teste (1, {})
 
-    val minhaFuncaoAnonima = fun(a: Int, b: Int): Int{
-        return a + b
+}
+
+    //Higher order function
+    fun teste( teste: Int, bloco: () -> Unit,){
+
     }
-    println(minhaFuncaoAnonima(20, 10))
-}
+    fun testeRecebeString(valor: String){
+
+    }
 
 
-fun testaTipoFuncaoClasse() {
-    val minhaFuncaoClasse: (Int, Int) -> Int = Soma()
-    println(minhaFuncaoClasse(10, 10))
-}
-
-fun testaTipoFuncaoReferencia() {
-    val minhaFuncao: (Int, Int) -> Int = ::soma
-    println(minhaFuncao(5, 10))
-}
-
-fun soma(a: Int, b: Int): Int{
-    return a + b
-}
-
-class Soma : (Int, Int) -> Int {
-    override fun invoke(a: Int, b: Int): Int = a + b
-
-}
 
 
 

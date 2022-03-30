@@ -22,3 +22,9 @@ fun soma(a: Int, b: Int, resultado: (Int) -> Unit){
     resultado(a + b)
     println("depois da soma")
 }
+
+fun somaReceiver(a: Int, b: Int, resultado: (Int) -> Unit){
+    print("antes da soma")
+    resultado(a + b)
+    println("depois do resultado")
+}

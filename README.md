@@ -1,6 +1,7 @@
 # Bytebank
 
-  This is a *bytebank* created as a way of exercice some `kotlin` fundaments as part of my personal development path with the language. 
+  This is a **bytebank** created as a way of exercice some `Kotlin` fundaments as part of my personal development 
+  path with the language. This repository makes part of my **Alura Kotlin training**.
 
 # Annotations Scope Function Selection
 
@@ -13,7 +14,7 @@
 | apply    | this             |Context object| yes                                        |
 | also     | it               |Context object| yes                                        |
 
-*These are not rules but quick tips for scope functions usage*
+**These are not rules but quick tips for scope functions usage**
 - Execute lambda with non nullable objects: `let()`
 - Introduce an expression as a variable in local scope: `let()`
 - Configure object: `apply()`
@@ -22,7 +23,7 @@
 - Additional executions without affecting the scope: `also()`
 - Grouped function calls in an object: `with()`
 
-*takeIf and takeUnless*
+**takeIf and takeUnless**
 Not really common to see
 Ex: 
 ```

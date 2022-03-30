@@ -3,7 +3,7 @@
   This is a **bytebank** created as a way of exercice some `Kotlin` fundaments as part of my personal development 
   path with the language. This repository makes part of my **Alura Kotlin training**.
 
-# Annotations Scope Function Selection
+### Annotations Scope Function Selection
 
 | Function | Object reference | Return value | Is extension function                      |
 |----------|------------------|--------------|--------------------------------------------|

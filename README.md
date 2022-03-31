@@ -9,8 +9,7 @@
   - Particularities Number class, String class and Data class
   - Exceptions and null references 
   - Function paradigm features
-- ##Collections and functional features 
-- 
+- ##Collections and functional features
   - ### Collections
   Kotlin Collections is the second part of **Kotlin bytebank** created as a way of exercice some `kotlin` fundaments as part of my personal development path with the language.
   It develops and exemplify knowledge in:

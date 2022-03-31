@@ -3,14 +3,14 @@
   **Kotlin bytebank** is a personal and the main project of this repository, created as a way of exercice some `Kotlin` fundaments as part of my personal development 
   path with the language. This repository makes part of my **Alura Kotlin training**.
   It develops and exemplify knowledge in:
-##Object Orientation
+- ##Object Orientation
   - Inheritance, polymorphism and interfaces 
   - Languages resources and composition packages 
   - Particularities Number class, String class and Data class
   - Exceptions and null references 
   - Function paradigm features
   
-#Collections and functional features
+- ##Collections and functional features
 - ### Collections
 Kotlin Collections is the **second part of Kotlin bytebank** created as a way of exercice some `kotlin` fundaments as part of my personal development path with the language.
 It develops and exemplify knowledge in:

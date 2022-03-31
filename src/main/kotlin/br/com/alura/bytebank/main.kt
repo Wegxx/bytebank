@@ -1,41 +1,55 @@
-import br.com.alura.bytebank.modelo.Autenticavel
+import br.com.alura.bytebank.modelo.Cliente
+import br.com.alura.bytebank.modelo.ContaPoupanca
 import br.com.alura.bytebank.modelo.Endereco
-import br.com.alura.bytebank.modelo.SistemaInterno
-import java.util.*
+import kotlin.math.absoluteValue
 
 fun main() {
 
-    //val endereco =  Endereco(logradouro = "rua vergueiro", numero = 3185)
-    //val enderecoEmMaiusculo = "${endereco.logradouro}, ${endereco.numero}".uppercase(Locale.getDefault())
-    //println(enderecoEmMaiusculo)
+}
 
-   Endereco(logradouro = "rua vergueiro", numero = 3185).let { endereco ->
-        "${endereco.logradouro}, ${endereco.numero}".uppercase(Locale.getDefault())
-   }.let (::println)
+fun testaRun() {
+    val taxaAnual = 0.05
+    val taxaMensal = taxaAnual / 12
+    println("taxa mensal: $taxaMensal")
 
-    val enderecosComComplemento = listOf(Endereco(complemento = "casa"),
-        Endereco(complemento = "apartamento"),
-        Endereco()).filter (predicate = { endereco -> endereco.complemento.isNotEmpty() }).let (block = (::println))
-
-    soma (1, 5, resultado = (:: println))
-
-    val autenticavel = object : Autenticavel {
-        val senha = 1234
-        override fun autenticacao(senha: Int) = this.senha == senha
-
+    val contaPoupanca = ContaPoupanca(Cliente(nome = "Alex", cpf = "111.111.111-11", senha = 1234), 1000)
+    contaPoupanca.run {
+        depositar(1000.0)
+        saldo * taxaMensal
+    }.let { rendimentoMensal ->
+        println(rendimentoMensal)
     }
 
-    SistemaInterno().entrar(autenticavel, 1234, autenticado = {
-        println("Realiza pagamento")
-    })
-
+    val redimentoAnual = run {
+        var saldo: Double = contaPoupanca.saldo
+        repeat(12) {
+            saldo += saldo * taxaMensal
+        }
+        saldo
+    }
+    println("simulação rendiemnto anual $redimentoAnual")
 }
 
-fun soma(a: Int, b: Int, resultado: (Int) -> Unit){
-    println("antes da soma")
-    resultado(a + b)
-    println("depois da soma")
+fun testaWith() {
+    val enderecoCompleto = with(Endereco()) {
+        logradouro = "rua vergueiro"
+        numero = 3185
+        bairro = "Vila Marina"
+        cidade = "São Paulo"
+        estado = "SP"
+        cep = "02310-063"
+        complemento = "Apartemento"
+        completo()
+    }.let { enderecoCompleto: String ->
+        println(enderecoCompleto)
+    }
 }
+
+
+
+
+
+
 
 
 

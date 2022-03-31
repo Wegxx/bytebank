@@ -9,28 +9,29 @@
   - Particularities Number class, String class and Data class
   - Exceptions and null references 
   - Function paradigm features
+  
 ##Collections and functional features
-    - ### Collections
-    Kotlin Collections is the second part of **Kotlin bytebank** created as a way of exercice some `kotlin` fundaments as part of my personal development path with the language.
-    It develops and exemplify knowledge in:
+- ### Collections
+Kotlin Collections is the **second part of Kotlin bytebank** created as a way of exercice some `kotlin` fundaments as part of my personal development path with the language.
+It develops and exemplify knowledge in:
 
-      - Declaring, constructing, looping and changing `Arrays`, `Ranges` and `Lists`
-      - Applying collection processing functions to solve common problems
-      - Understanding how to extend the language's standard library functionality by creating your own functions
-      - Using aggregate operations to manipulate collections
-      - Understanding the difference between mutable and immutable collections
+   - Declaring, constructing, looping and changing `Arrays`, `Ranges` and `Lists`
+   - Applying collection processing functions to solve common problems
+   - Understanding how to extend the language's standard library functionality by creating your own functions
+   - Using aggregate operations to manipulate collections
+   - Understanding the difference between mutable and immutable collections
 
-  - ### CollectionsMapsSets
-    Kotlin Collections is the third part of **Kotlin bytebank** created as a way of exercice some `kotlin` fundaments as part of my personal development path with the language.
-    It develops and exemplify knowledge in:
+   - ### CollectionsMapsSets
+Kotlin Collections is the **third part of Kotlin bytebank** created as a way of exercice some `kotlin` fundaments as part of my personal development path with the language.
+   It develops and exemplify knowledge in:
 
-  - Understanding the basics of `Collection` and `Iterable` references
-  - Understanding the usage of `Set`
-  - Creating key-value `Maps`
-  - Understanding specific operations between `Maps` and `Sets`
-  - Understanding functions 
+   - Understanding the basics of `Collection` and `Iterable` references
+   - Understanding the usage of `Set`
+   - Creating key-value `Maps`
+   - Understanding specific operations between `Maps` and `Sets`
+   - Understanding functions 
 
-  - ### Annotations Scope Function Selection
+   - ### Annotations Scope Function Selection
 All the exercises of Scope function content are in the main **Kotlin bytebank**
 
 | Function | Object reference | Return value | Is extension function                      |

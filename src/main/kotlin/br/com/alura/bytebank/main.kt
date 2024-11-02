@@ -1,5 +1,5 @@
-import br.com.alura.challanges.ratInAMazeChallange
+import br.com.alura.challanges.binaryTree
 
 fun main() {
-    ratInAMazeChallange()
+    binaryTree()
 }

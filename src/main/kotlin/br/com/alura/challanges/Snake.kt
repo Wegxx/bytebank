@@ -24,7 +24,7 @@ fun findNextBodyPart(position : Pair<String, Pair<Int, Int>>,
             ">" to Pair(0, 1),  // aponta para a direita
             "<" to Pair(0, -1), // aponta para a esquerda
             "^" to Pair(-1, 0), // aponta para a cima
-            "v" to Pair(1, 0), //// aponta para a baixo
+            "v" to Pair(1, 0),  // aponta para a baixo
         )
 
     val right = Pair(position.second.first, position.second.second + 1)

@@ -1,5 +1,5 @@
-import br.com.alura.challanges.binaryTree
+import br.com.alura.challanges.snake
 
 fun main() {
-    binaryTree()
+    snake()
 }
